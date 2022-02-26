@@ -1,8 +1,8 @@
+---
 # File for task "Configure Filebeat"
 #
 #
 
----
 - name: Configure Filebeat
   become: true
   template:

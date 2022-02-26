@@ -1,8 +1,8 @@
+---
 # file task dowmload_filebeat_rpm.yml
 #
 #
 
----
 - name: "Download Filebeat's rpm"
   get_url:
     url: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-{{ elk_stack_version }}-x86_64.rpm"

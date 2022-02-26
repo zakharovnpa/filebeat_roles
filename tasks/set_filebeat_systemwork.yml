@@ -1,9 +1,9 @@
+---
 # Files for tasks "Set filebeat systemwork"
 #
 #
 #
 
----
 - name: Set filebeat systemwork
   become: true
   command:
