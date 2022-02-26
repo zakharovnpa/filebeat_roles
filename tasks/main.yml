@@ -1,0 +1,15 @@
+---
+# tasks file for filebeat
+#
+#
+
+  - import_tasks: "configure_filebeat.yml"
+    tags: [config]
+  - include_tasks: "download_filebeat_rpm.yml"
+    tags: [install]
+  - include_tasks: "install_filebeat.yml"
+    tags: [install]
+  - include_tasks: "set_filebeat_systemwork.yml"
+    tags: [install]
+  - include_tasks: "load_kibana_dashboard.yml"
+    tags: [install]

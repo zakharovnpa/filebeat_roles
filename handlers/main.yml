@@ -1,0 +1,10 @@
+---
+# handlers file for filebeat
+#
+
+- name: restart filebeat
+  become: true
+  systemd:
+   name: filebeat
+   state: restarted
+   enabled: true

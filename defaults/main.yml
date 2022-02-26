@@ -1,0 +1,9 @@
+---
+# defaults file for filebeat
+#
+
+elk_stack_version: "7.14.0"
+
+#filebeat_version: "7.14.0"
+
+

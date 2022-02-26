@@ -1,0 +1,11 @@
+# File for task "Configure Filebeat"
+#
+#
+
+---
+- name: Configure Filebeat
+  become: true
+  template:
+    src: filebeat.yml.j2
+    dest: /etc/filebeat/filebeat.yml
+  notify: restart filebeat

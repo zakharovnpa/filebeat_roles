@@ -1,0 +1,12 @@
+# File for tasks "Load Kibana dashboard"
+#
+
+---
+- name: Load Kibana dashboard
+  become: true
+  command:
+    cmd: filebeat setup
+    chdir: /usr/share/filebeat/bin
+  register: filebeat_setup
+  changed_when: false
+  until: filebeat_setup is succeeded

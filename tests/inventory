@@ -1,0 +1,12 @@
+#localhost
+
+filebeat:
+  host:
+    application-instance:
+      ansible_host: <IP_instance>
+  vars:
+    ansible_connection: ssh
+    ansible_user: centos
+  roles:
+    - filebeat
+  
