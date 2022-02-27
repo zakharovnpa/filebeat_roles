@@ -4,8 +4,8 @@
 #
 
 - name: Install Filebeat
-   become: true
-   yum:
+  become: true
+  yum:
     name: "/tmp/filebeat-{{ elk_stack_version }}-x86_64.rpm"
     state: present
-   notify: restart filebeat
+  notify: restart filebeat
