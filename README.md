@@ -1,3 +1,5 @@
+### Описание функционала `Filebeat role` согласно ДЗ.
+
 Filebeat role
 =========
 
@@ -34,7 +36,7 @@ An optional section for the role authors to include contact information, or a we
 - Zakharov Sergey, Netology student of DevOps engeneers course.
 - Files version 0.0.01
 ---
-### Описание функционала `ansible-playbook` согласно ДЗ.
+
 * Показана структура файлов роли с описанием задач, модулей, методов, переменных и их значений, при выполнении которых Ansible на управляемых нодах установит утилиты и настроит соответствующие конфигурации.
 
 1. Файл ` filebeat_roles/defaults/main.yml `
